@@ -3,32 +3,7 @@
 		<meta charset='utf-8'>
 		<title>Teste de site multi-idioma</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-		<script type="text/javascript">
-			function printLang(theLang) {
-				$.ajax({
-				    url: 'languages.xml',
-				    success: function(xml) {
-				        $(xml).find('translation').each(function(){
-				            var id = $(this).attr('id');
-				            var text = $(this).find(theLang).html();
-				            $('.'+id).html(text);
-				        });
-				    }
-				});
-			};
-			$(document).ready(function() {
-				printLang('pt');
-			});
-			$(document).on('click', 'button.language', function(event) {
-				event.preventDefault();
-				if ($(this).attr('lang') == 'pt') {
-					printLang('pt');
-				} else if ($(this).attr('lang') == 'en') {
-					printLang('en');
-				}
-			});
-		</script>
+		<script src="multilang.js"></script>
 	</head>
 	<body>
 		<button lang="pt" class="language">Português</button>
