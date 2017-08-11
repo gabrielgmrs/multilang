@@ -1,4 +1,4 @@
 # multilang
-Multi language with jQuery Ajax / XML
+Multi language test with jQuery Ajax / XML
 
-Demo here: http://gbrlgmrs.com/multilang/
+Demo: http://gabrielgmrs.com/multilang/

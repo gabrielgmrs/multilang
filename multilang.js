@@ -14,9 +14,5 @@ $(document).ready(function() {
 	printLang('pt');
 });
 $(document).on('click', 'button.language', function(event) {
-	if ($(this).attr('lang') == 'pt') {
-		printLang('pt');
-	} else if ($(this).attr('lang') == 'en') {
-		printLang('en');
-	}
+	printLang($(this).attr('lang'));
 });
